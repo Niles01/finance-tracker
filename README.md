@@ -76,7 +76,7 @@ _App will run on_ **`http://localhost:5173`**
 ## Video Of Project
 
 <video width="600" controls>
-  <source src="./client/src/assets/financetracker.mp4" type="video/mp4">
+  <source src="/client/src/assets/financetracker.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
