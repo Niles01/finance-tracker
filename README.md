@@ -74,6 +74,7 @@ _App will run on_ **`http://localhost:5173`**
 ![Responsive UI](/client/src/assets/responsive.png)
 
 ## Video Of Project
+[VideoLink](/client/src/assets/financetracker.mp4)
 
 <video width="600" controls>
   <source src=".//client//src/assets//financetracker.mp4" type="video/mp4">
