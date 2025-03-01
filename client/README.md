@@ -1,12 +1,83 @@
-# React + Vite
+# 📊 Finance Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Finance Tracker is a web application that helps users manage their income and expenses efficiently. It provides a user-friendly interface to add transactions, track savings, and view financial summaries.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- 📌 User Authentication using **Clerk**
+- 💰 Track **Income & Expenses**
+- 🏦 Calculate **Savings**
+- 📩 Fetch **User Details** (Name, Email, Phone)
+- 🔄 **Flask API** Backend for Storing Transactions
+- 📊 Dynamic UI with **React & TailwindCSS**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack
+### **Frontend**:
+- React.js (Vite)
+- Clerk Authentication
+- TailwindCSS
+- Axios (for API requests)
+- Lucide React Icons
 
-## Expanding the ESLint configuration
+### **Backend**:
+- Flask (Python)
+- Flask-SQLAlchemy (Database)
+- Flask-CORS (for API access)
+- MySQL (Database Storage)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔧 Installation & Setup
+
+### **1️⃣ Clone the Repository**
+```sh
+git clone https://github.com/niles01/finance-tracker.git
+cd finance-tracker
+```
+
+### **2️⃣ Backend Setup (Flask API)**
+#### **Install Dependencies**
+```sh
+pip install flask flask-sqlalchemy flask-cors
+```
+
+#### **Run Flask Server**
+```sh
+python main.py
+```
+_Backend will run on_ **`http://localhost:5000`**
+
+### **3️⃣ Frontend Setup (React App)**
+#### **Install Dependencies**
+```sh
+npm install
+```
+
+#### **Set Environment Variables**
+Create a `.env` file in the root directory:
+```sh
+VITE_BACKEND_URL=http://localhost:5000
+```
+
+#### **Run React App**
+```sh
+npm run dev
+```
+_App will run on_ **`http://localhost:5173`**
+
+## 🔗 API Endpoints
+| Method | Endpoint | Description |
+|--------|------------|----------------|
+| `POST` | `/add_amount` | Add income/expense to database |
+
+## 📷 Screenshots
+![Dashboard UI](./src/assets/Screenshot%20(42).png)
+![Authentication UI](./src/assets/Screenshot%20(43).png)
+![FinanceDetails UI](./src/assets/Screenshot%20(45).png)
+![Responsive UI](./src/assets/responsive.png)
+
+## Video Of Project
+
+<video width="600" controls>
+  <source src="./src/assets/financetracker.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
